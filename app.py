@@ -14,7 +14,7 @@ def index():
     scores = []
     teams = []
     for id in ids:
-        url = f"https://api.angstromctf.com/competitions/6/teams/{id.strip()}"
+        url = f"https://[api]/competitions/6/teams/{id.strip()}"
 
         respuesta = requests.get(url.strip())
         contenido = respuesta.text
